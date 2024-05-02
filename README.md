@@ -21,7 +21,7 @@ Clone the repository to your local machine:
 git clone https://github.com/grierdavid/pvlib-site-model.git 
 cd pvlib-site-mode
 docker build -t site-model .
-docker run -it --rm -p 1000:8888 -v $(pwd):/home/jovyan/work site-model
+docker run -it --rm -p 8888:8888 -v $(pwd):/home/jovyan/work site-model
 copy from startup:  http://127.0.0.1:8888/lab?token=<session token> 
 into browser
 navigate to work/experiments.ipynb
