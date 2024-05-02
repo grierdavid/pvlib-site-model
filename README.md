@@ -12,7 +12,6 @@ This Python project utilizes `pvlib` and a custom forecasting library to predict
 
 Before you begin, ensure you have met the following requirements:
 - Python 3.7 or higher
-- pip for Python package installation
 
 ## Installation
 
@@ -21,4 +20,8 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/grierdavid/pvlib-site-model.git 
 cd pvlib-site-mode
-
+docker build -t site-model .
+docker run -it --rm -p 1000:8888 -v $(pwd):/home/jovyan/work site-model
+copy from startup:  http://127.0.0.1:8888/lab?token=<session token> 
+into browser
+navigate to work/experiments.ipynb
