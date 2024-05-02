@@ -1,0 +1,6 @@
+model.py
+pyproject.toml
+plant_model.egg-info/PKG-INFO
+plant_model.egg-info/SOURCES.txt
+plant_model.egg-info/dependency_links.txt
+plant_model.egg-info/top_level.txt
